@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "gilroy";
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+}
+
+#back img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+#working-area{
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0px;
+}
+
+#nav img{
+    height: 60px;
+}
+
+#nleft, #nright {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#nav a{
+    pointer-events: all;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#hero{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    transform: translate(0,-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#heroleft{
+    min-width: 50%;
+}
+
+#heroleft .elem{
+    position: relative;
+    overflow: hidden;
+    height: 9.5vw;
+}
+
+#heroleft .elem h1:nth-child(1){
+    top: 0%;
+}
+
+#heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: 0.9;
+    font-family: "kajiro";
+    color:white;
+    font-weight: 100;
+    font-size: 12vw;
+}
+
+#heroleft button{
+    pointer-events: all;
+    padding: .8vw 3vw;
+    font-family: "kajiro";
+    font-size: 2vw;
+    margin-top: 2vw;
+    letter-spacing: 1vw;
+    border-radius: 10px;
+}
+
+#heroright{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 17%;
+    color: white;
+}
+
+#heroright p{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    background-color: rgba(77, 77, 77, 0.573);
+    border-radius: 10px;
+}
+
+#heroright #imgdiv{
+    width: 100%;
+    height: 170px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-image: url(https://images.unsplash.com/photo-1682687220777-2c60708d6889?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2fHx8ZW58MHx8fHx8);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+#heroright p:nth-child(3){
+    margin-bottom: 30px;
+}
